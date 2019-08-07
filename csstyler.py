@@ -39,7 +39,7 @@ def rgba_to_hexa(source):
         hblue = format(int(divided[2]), 'x').zfill(2)
         halpha = format(int(float(divided[3]) * 255), 'x').zfill(2)
         hrgba = '#' + hred + hgreen + hblue + halpha
-        source = source.replace(hit, hrgba)            
+        source = source.replace(hit, hrgba)
     return source
 
 def hex_to_rgb(source):
@@ -63,7 +63,7 @@ def rgb_to_hex(source):
         hgreen = format(int(divided[1]), 'x').zfill(2)
         hblue = format(int(divided[2]), 'x').zfill(2)
         hrgb = '#' + hred + hgreen + hblue
-        source = source.replace(hit, hrgb)            
+        source = source.replace(hit, hrgb)
     return source
 
 
@@ -99,4 +99,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
